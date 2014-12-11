@@ -15,124 +15,13 @@ var createCustomers = function() {
 	Customer.find({}).remove(function() {
 		Customer.create(
 			{
-				name: 'Jose Luis Monteagudo',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
+				name: 'Miriam Escobar',
+				address: 'Santa Marta',
+				state: 'Magdalena',
+				country: 'Colombia'
 			},
 
-			{
-				name: 'Diego Simeone',
-				address: 'C/Cabo de Gata, 3',
-				state: 'Valencia',
-				country: 'Spain'
-			},
 
-			{
-				name: 'Thibaut Courtois',
-				address: 'C/Sagunto, 5',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Daniel Aranzubia',
-				address: 'C/Paterna',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Diego Godin',
-				address: 'C/Machichaco, 3',
-				state: 'Bilbao',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Filipe Luis Kasmirski',
-				address: 'C/Historiador Viciano, 13',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Juanfran Torres',
-				address: 'C/Cabo Malaga, 3',
-				state: 'Cadiz',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Miranda Souza',
-				address: 'C/Escultor Viciano, 23',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Tiago Cardoso',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Mario Suarez',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Koke Resurrecion',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Gabi Fernandez',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Arda Turan',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Oliver Torres',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Adrian Lopez',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'Diego Costa',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-
-			{
-				name: 'David Villa',
-				address: 'C/Cabo de Machichaco, 3',
-				state: 'Castellon',
-				country: 'Spain'
-			},
-																								
 			function(err, customer) {
 				if (err) {
 					log.error('Error loading dummy customers: ' + err);
@@ -156,68 +45,68 @@ var createProducts = function() {
 	Product.find({}).remove(function() {
 		Product.create(
 			{
-				description: 'Parachoques Delantero Ford Focus',
-				price: 95
+				description: 'Televisor 42" LCD Panasonic',
+				price: 750.000,00
 			},
 			{
-				description: 'Parachoques Trasero Ford Focus',
-				price: 105
+				description: 'Sofa 2 puestos',
+				price: 250.000,00
 			},
 			{
-				description: 'Optica Derecha Ford Focus',
-				price: 56.98
+				description: 'Escritorio laminado blanco',
+				price: 450.00,00
 			},
 			{
-				description: 'Optica Izquierda Ford Focus',
-				price: 56
+				description: 'Mesa de madera y vidrio',
+				price: 600.00,00
 			},
 			{
-				description: 'Parachoques Delantero Citroen C4',
-				price: 95
+				description: 'Aire Acondicionado MiniSplit Royal 9000 btu 220v',
+				price: 350.00,00
 			},
 			{
-				description: 'Parachoques Trasero Citroen C4',
-				price: 105
+				description: 'Lavadora ',
+				price: 130.00,00
 			},
 			{
-				description: 'Optica Derecha Citroen C4',
-				price: 56
+				description: 'Abanico de pie',
+				price: 40.000,00
 			},
 			{
-				description: 'Optica Izquierda Citroen C4',
-				price: 56.99
+				description: 'Caballetes (10)',
+				price: 30.000,00
 			},
 			{
-				description: 'Parachoques Delantero Citroen C3',
-				price: 95
+				description: 'Acesorios Cocina',
+				price: 5.000,00 - 50.000,00
 			},
 			{
-				description: 'Parachoques Trasero Citroen C3',
-				price: 105
+				description: 'Impresora Laser Canon ML-1675',
+				price: 50.000,00
 			},
 			{
-				description: 'Optica Derecha Citroen C3',
-				price: 56
+				description: 'Obras',
+				price: 50.000,00 - 1.000.000,00
 			},
 			{
-				description: 'Optica Izquierda Citroen C3',
-				price: 56
+				description: 'Juego de cuarto',
+				price: 750.000,00
 			},
 			{
-				description: 'Parachoques Delantero Citroen C2',
-				price: 95
+				description: 'Silla de Oficina',
+				price: 50.000,00
 			},
 			{
-				description: 'Parachoques Trasero Citroen C2',
-				price: 105
+				description: 'Acesocios de oficina',
+				price: 5.000,00 - 50.000,00
 			},
 			{
-				description: 'Optica Derecha Citroen C2',
-				price: 56
+				description: 'Projector con Pantalla',
+				price: 250.000,00
 			},
 			{
-				description: 'Optica Izquierda Citroen C2',
-				price: 56
+				description: 'Mesa de noche (negra)',
+				price: 25.000,00
 			},
 			function(err, product) {
 				if (err) {
@@ -278,7 +167,7 @@ var createSalesOrders = function(params) {
 		salesOrder = getSalesOrderToCreate('closed', customer, product, 2, 50);
 		salesOrder.save(function(err, createdSalesOrder) {
 			if (err) { deferred.reject(err); }
-			
+
 			log.info('Finished populating dummy sales orders');
 			deferred.resolve(createdSalesOrder);
 		});
@@ -313,6 +202,3 @@ Q.all([createCustomers(), createProducts()])
 	.then(createSalesOrders)
 	.then(findSalesOrder)
 	.done();
-
-
-
